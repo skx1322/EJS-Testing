@@ -1,0 +1,75 @@
+Background: #ffffff
+Text: #030206
+Primary: #14b78a
+Secondary: #535da2
+Accent: #a5ddc3
+Error: 
+Success:
+Dim-Text: #a5ddc3
+Primary-Shade:
+Secondary-Shade
+Primary-Gradient:
+
+Font: 
+Title:
+Body:
+Small:
+
+Content: Greeting,
+Content2: Looking for Webpage-Designer Freelancer? I'm available for work!
+Content3: Here's About Me: 
+
+<div>
+<h2>Information</h2>
+<p>Name: Sin Kai Xing</p>
+<p>Birthday: 21st November. 2005</p>
+<p>Phone: 011-1091-7368</p>
+<p>Email: kaixing635@gmail.com</p>
+</div>
+
+
+ <div>
+  <h2>Background</h2>
+  <p>I'm currently a student from the Multimedia University and are currently undergoing degree in CS.</p>
+  <img>
+ </div>
+
+<div>
+  <h2>Experience</h2>
+  <li>HTML-5</li>
+  <li>CSS</li>
+  <li>Javascript</li>
+  <li>C++</li>
+</div>
+
+<div>
+  <h2>Project</h2>
+  <div>
+   <img>
+   <p>Project 1#</p>
+  </div>
+  <div>
+   <img>
+   <p>Project 2#</p>
+  </div>
+  <div>
+   <img>
+   <p>Project 3#</p>
+  </div>
+  <div>
+   <img>
+   <p>Project 4#</p>
+  </div>
+</div>
+
+Service
+Website-Developer
+
+About
+A capable intermediate website-developer. If you need a website designer and developer, feel free to contact me.
+
+Email
+kaixing635@gmail.com
+
+<label></label>
+

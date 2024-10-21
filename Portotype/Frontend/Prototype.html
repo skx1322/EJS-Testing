@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/cb35bc25b0.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="navigation-bar">
+        <nav>
+            <div class="navigation-logo">
+                <a href="/" class="left-navigation">
+                    <img src="" alt="" class="logo">
+                    <a class="name">Nerdanta</a>
+                </a>
+            </div>
+
+            <div class="navigation-container">
+                <a href="#home" class="middle-navigation">Home</a>
+                <a href="#about" class="middle-navigation">About Me</a>
+                <a href="#skill-section" class="middle-navigation">Skills</a>
+                <a href="#project-lists" class="middle-navigation">Projects</a>
+            </div>
+            <div class="navigation-button">
+                <button class="contact" >Contact</button>
+            </div>
+
+
+            <button class="navigation-more active">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        <div class="slider-bar">
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+                <a href="#home" class="middle-navigation">Home</a>
+                <a href="#about" class="middle-navigation">About Me</a>
+                <a href="#skill-section" class="middle-navigation">Skills</a>
+                <a href="#project-lists" class="middle-navigation">Projects</a>
+                <button class="contact">Contact</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Introduction -->
+    <div class="introduction" id="home">
+        <div class="introduction-content">
+            <h3>Greeting! I am</h3>
+            <h2>Nerdanta</h2>
+            <h1>Programmer</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias accusamus aspernatur ducimus, reiciendis enim explicabo doloremque officia itaque, iusto in libero modi vero repellat. Quia doloribus sed voluptatum explicabo id.</p>
+            <button class="contact" style="margin-top: 4.375rem;">Contact</button>
+        </div>
+
+        <div class="introduction-profile">
+            <img src="Image/Test.jpg" alt="" width="480" height="480" class="profile" style="max-width: 100%; height: auto;">
+            <div class="media-container">
+                <a href="/" class="media-link">
+                    <i class="fa-brands fa-linkedin fa-xl"></i>
+                </a>
+                
+                <a href="/" class="media-link">
+                    <i class="fa-brands fa-discord fa-xl"></i>
+                </a>
+
+                <a href="/" class="media-link">
+                    <i class="fa-brands fa-github fa-xl"></i>
+                </a>
+                
+                <a href="/" class="media-link">
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="about" id="about">
+        <div class="introduction-profile">
+            <img src="Image/Test.jpg" alt="" width="480" height="480" class="profile" style="max-width: 100%; height: auto;">
+        </div>
+        <div class="introduction-content">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias accusamus aspernatur ducimus, reiciendis enim explicabo doloremque officia itaque, iusto in libero modi vero repellat. Quia doloribus sed voluptatum explicabo id.</p>
+            <h2 style="margin-top: 3rem;">Hobby</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias accusamus aspernatur ducimus, reiciendis enim explicabo doloremque officia itaque, iusto in libero modi vero repellat. Quia doloribus sed voluptatum explicabo id.</p>
+        </div>
+    </div>
+    <!-- Skills grid -->
+    <div class="skill-section" style="margin-top: 5.375rem;" id="skill-section">
+        <div class="skill-flex">
+            <div class="Grid-Box">
+                <h1 class="Title"> &#10094; Frontend &#10095; </h1>
+                <div class="skill-box">
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill-box">
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill-box">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-box">
+                    <h3>jQuery</h3>
+                </div>
+            </div>
+            <div class="Grid-Box">
+                <h1 class="Title">&#10100; Backend &#10101;</h1>
+                <div class="skill-box">
+                    <h3>NodeJS</h3>
+                </div>
+                <div class="skill-box">
+                    <h3>Express</h3>
+                </div>
+                <div class="skill-box">
+                    <h3>EJS</h3>
+                </div>
+            </div>
+            <div class="Grid-Box">
+                <h1 class="Title"> &#10088; Data &#10089; </h1>
+                <div class="skill-box">
+                    <h3>SQL</h3>
+                </div>
+                <div class="skill-box">
+                    <h3>PostgreSQL</h3>
+                </div>
+                <div class="skill-box">
+                    <h3>Excel</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects List -->
+    <div class="project-lists" id="project-lists">
+        <div class="Title">
+            <h1>My Projects</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatibus iusto, similique nostrum ad eos omnis neque tempore molestias tempora laudantium maiores quae pariatur velit repellat veniam consequuntur deleniti! Architecto!</p>
+        </div>
+        <div class="Project-Interface">
+            <div class="Project-Selection">
+                <button class="project-buttons">
+                    All
+                </button>
+                <button class="project-buttons project-active">
+                    Completed-Project
+                </button>
+                <button class="project-buttons">
+                    Backend-Project
+                </button>
+                <button class="project-buttons">
+                    Data-Analysis
+                </button>
+                <button class="project-buttons">
+                    Incomplete-Project
+                </button>
+            </div> 
+
+            <!-- Container section -->
+            <div class="container-section Completed-Project">
+                <div class="Project-Display">
+                    <div class="Container">
+                        <img src="Image/Test.jpg" alt="" width="300" height="auto" class="web-project" style="max-width: 100%; height: auto;">
+                    </div>
+                    <p>Completed-Project</p>
+                    <a>Project Number 1</a>
+                </div>
+                <div class="Project-Display">
+                    <div class="Container">
+                        <img src="Image/Test.jpg" alt="" width="300" height="auto" class="web-project" style="max-width: 100%; height: auto;">
+                    </div>
+                    <p>Completed-Project</p>
+                    <a>Project Number 1</a>
+                </div>
+                <div class="Project-Display">
+                    <div class="Container">
+                        <img src="Image/Test.jpg" alt="" width="300" height="auto" class="web-project" style="max-width: 100%; height: auto;">
+                    </div>
+                    <p>Completed-Project</p>
+                    <a>Project Number 1</a>
+                </div>
+            </div>
+            
+            <div class="container-section Backend-Project" style="display: none;">
+                <div class="Project-Display">
+                    <div class="Container">
+                        <img src="Image/Test.jpg" alt="" width="300" height="auto" class="web-project" style="max-width: 100%; height: auto;">
+                    </div>
+                    <p>Backend-Project</p>
+                    <a>Project Number 1</a>
+                </div>
+                <div class="Project-Display">
+                    <div class="Container">
+                        <img src="Image/Test.jpg" alt="" width="300" height="auto" class="web-project" style="max-width: 100%; height: auto;">
+                    </div>
+                    <p>Backend-Project</p>
+                    <a>Project Number 1</a>
+                </div>
+                <div class="Project-Display">
+                    <div class="Container">
+                        <img src="Image/Test.jpg" alt="" width="300" height="auto" class="web-project" style="max-width: 100%; height: auto;">
+                    </div>
+                    <p>Backend-Project</p>
+                    <a>Project Number 1</a>
+                </div>
+            </div>
+
+            <div class="container-section Data-Analysis" style="display: none;">
+                <div class="Project-Display">
+                    <div class="Container">
+                        <img src="Image/Test.jpg" alt="" width="300" height="auto" class="web-project" style="max-width: 100%; height: auto;">
+                    </div>
+                    <p>Data-Analysis</p>
+                    <a>Project Number 1</a>
+                </div>
+                <div class="Project-Display">
+                    <div class="Container">
+                        <img src="Image/Test.jpg" alt="" width="300" height="auto" class="web-project" style="max-width: 100%; height: auto;">
+                    </div>
+                    <p>Data-Analysis</p>
+                    <a>Project Number 1</a>
+                </div>
+                <div class="Project-Display">
+                    <div class="Container">
+                        <img src="Image/Test.jpg" alt="" width="300" height="auto" class="web-project" style="max-width: 100%; height: auto;">
+                    </div>
+                    <p>Data-Analysis</p>
+                    <a>Project Number 1</a>
+                </div>
+            </div>
+
+            <div class="container-section Incomplete-Project" style="display: none;">
+                <div class="Project-Display">
+                    <div class="Container">
+                        <img src="Image/Test.jpg" alt="" width="300" height="auto" class="web-project" style="max-width: 100%; height: auto;">
+                    </div>
+                    <p>Incomplete-Project</p>
+                    <a>Project Number 1</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact-section" id="contact">
+        <div class="contact-top">
+            <h1>Contact Here </h1>
+            <div class="Contact-info">
+                <h3>Contact Info</h3>
+                <p>kaixing636@gmail.com</p>
+                <p>Malaysia, MY</p>
+            </div>
+        </div>
+        <div class="contact-input">
+            <form action="" method="POST">
+                <input type="text" id="Username" placeholder="Nerdanta" minlength="6" maxlength="40" required> <!--Text input-->
+                <input type="email" id="Email" placeholder="Nerdanta1322@gmail.com" required> <!--Email input-->
+                <textarea id="comment"row="3" cols="25" placeholder="Send your message" required></textarea> <!--Textarea for long paragraph input-->
+                <input type="submit" value="Contact Me" class="btn" style="margin-top: 0.5rem; width: fit-content;">
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="ending" style="margin-top: 6rem; margin-bottom: 6rem; max-width: 100%;">
+        <div class="left-navigation">
+            <img src="" alt="" class="logo">
+            <h1 class="name">Nerdanta</h1>
+        </div>
+        <div class="ending-container" style="margin-top: 4.375rem;">
+            <a href="#home" class="middle-navigation">Home</a>
+            <a href="#about" class="middle-navigation">About Me</a>
+            <a href="#skill-section" class="middle-navigation">Skills</a>
+            <a href="#project-lists" class="middle-navigation">Projects</a>
+        </div>
+        <div class="media-container"  style="margin-top: 4.375rem;">
+            <a href="/" class="media-link">
+                <i class="fa-brands fa-linkedin fa-xl"></i>
+            </a>
+            
+            <a href="/" class="media-link">
+                <i class="fa-brands fa-discord fa-xl"></i>
+            </a>
+
+            <a href="/" class="media-link">
+                <i class="fa-brands fa-github fa-xl"></i>
+            </a>
+            
+            <a href="/" class="media-link">
+                <i class="fa-brands fa-instagram fa-xl"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>

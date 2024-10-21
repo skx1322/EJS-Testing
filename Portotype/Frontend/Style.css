@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --black: #1E1E1E;
+    --blue: #009CFD;
+    --gray: rgba(100, 94, 94, 0.6);
+    --gray-hover: rgba(255, 255, 255, 0.6);
+    --border-radius: 1rem;
+    --font-size-base: 21px;
+    --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+    --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+    --font-size-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+}
+
+@media only screen and (max-width: 500px) {
+    .navigation-container a{
+        display: none;
+    }
+    .navigation-button {
+        display: none;
+    }
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: #FAF5EE;
+    background-color: var(--black);
+    max-width: 1420px;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+a{
+    color: #FAF5EE;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: var(--font-size-base);
+}
+a:hover{
+    color: var(--gray-hover);
+}
+
+p{
+    margin: 0;
+}
+
+h1{
+    font-size: var(--font-size-xl);
+    font-weight: bold;
+    margin: 0;
+}
+h2{
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    margin: 0;
+}
+h3{
+    font-size: var(--font-size-md);
+    font-weight: 400;
+    margin: 0;
+}
+
+p{
+    font-size: 1rem;
+}
+
+.profile{
+    background: linear-gradient(180deg, rgba(255,255,255,0.5) 0%, rgba(0,156,253,1) 100%);
+    border-radius: 50%;
+    padding: 6px;
+    /* border: #009CFD 4px solid; */
+    /* Ellipse 4 */
+}
+
+.btn, button{
+    background-color: var(--blue);
+    font-size: 21px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #FAF5EE;
+    border-radius: 5px;
+    border: none;
+    padding: 16px 40px 16px 40px;
+    cursor: pointer;
+}
+
+.project-buttons{
+    color: var(--black);
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    font-size: 24px;
+}
+
+.project-active{
+    color: white;
+    background-color: var(--blue);
+    padding: 10px 20px 10px 20px;
+    font-size: 24px;
+    box-shadow: 0 0 1rem var(--blue);
+}
+
+.btn:hover, button:hover{
+    color: var(--black);
+    background: rgba(0,156,253,0.8);
+    box-shadow: 0 0 1rem var(--blue);
+    transform: scale(1.05); 
+}
+
+.navigation-bar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation-bar nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-bar .navigation-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    text-align: center;
+}
+
+
+/* Responsive Slider-Layout */
+.slider-bar{
+    display: none;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    z-index: 1;
+    background-color: rgba(26, 16, 16);
+    border-radius: var(--border-radius);
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+    margin-top: 5rem;
+}
+
+.slider-bar.active {
+    display: flex;
+    transform: translateX(0);
+}
+
+.slider-bar a{
+    padding: 0.5rem;
+}
+
+.fa-bars.rotate {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+@media (min-width: 500px) {
+    .slider-bar{
+        display: none;
+    }
+    .navigation-more {
+        display: none;
+    }
+}
+
+
+/* Intro div */
+.introduction{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: self-start;
+    margin: 7.5rem 1rem 0 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .introduction{
+        grid-template-columns: 1fr;
+    }
+}
+
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: self-start;
+    margin: 5.375rem 1rem 0 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .about{
+        grid-template-columns: 1fr;
+    }
+    .about .introduction-profile{
+        grid-row: 2;
+    }
+    .about .introduction-content{
+        grid-row: 1;
+    }
+}
+
+
+.introduction .introduction-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introduction-content{
+    margin-top: 3rem;
+}
+.introduction-profile{
+    margin-top: 3rem;
+}
+
+.introduction p{
+    margin-top: 3rem;
+    text-align: justify;
+}
+
+.introduction .Contact{
+    margin-top: 3rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.media-container{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+/* Skill-Grid */
+.skill-section h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.skill-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Grid-Box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: auto; 
+    width: fit-content;
+    gap: 2rem;
+}
+
+.Grid-Box .Title {
+    grid-column: span 4;
+    text-align: center; 
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .Grid-Box {
+        grid-template-columns: 1fr;
+    }
+    
+    .Grid-Box .Title {
+        grid-column: span 3;
+    }
+}
+
+.skill-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+    background: linear-gradient(180deg, #FFFFFF 0%, #009CFD 100%);
+    border-radius: 16px;
+
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skill-box:hover{
+    color: var(--black);
+    background: linear-gradient(180deg, #009CFD 0%, #FFFFFF 100%);
+    box-shadow: 0 0 1rem var(--blue);
+    transform: scale(1.05); 
+}
+
+/* Project-List */
+
+.project-lists{
+    margin-top: 4.375rem;
+}
+
+.project-lists .Title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-lists .Title p{
+    max-width: 920px;
+    text-align: center;
+}
+
+.Project-Selection{
+    margin-top: 4.375rem;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 3fr 3fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .Project-Selection{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .Project-Selection button{
+        font-size: 18px;
+    }
+}
+
+
+.container-section{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.Container{
+    /* Design css */
+    background-color: #FFEBDB;
+    width: fit-content;
+    height: fit-content;
+    padding: 0 2.5rem 0 2.5rem;
+    border-radius: var(--border-radius);
+}
+
+.container-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem 0 1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container-section{
+        grid-template-columns: 1fr;
+    }
+}
+
+.Project-Display p{
+    color: var(--blue);
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.Project-Display a{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Contact Section */
+.contact-section{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 0.5fr;
+    margin-top: 7.5rem;
+}
+
+.contact-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-input{
+    margin-top: 24px;
+}
+
+.contact-input form{
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+    gap: 1rem;
+}
+
+#Username, #Email, #comment{
+    border-radius: var(--border-radius);
+    background: #F8F8F8;
+    border: 1px solid #AFAFAF;
+    font-size: var(--font-size-base);
+    padding: 1rem;
+
+    font-family: "Poppins", sans-serif;
+}
+
+/* Footer */
+.ending{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ending-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 4rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .ending-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+}
